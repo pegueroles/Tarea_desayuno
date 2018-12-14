@@ -1,4 +1,5 @@
 "Receta de Diseño"
+
 "Calentar: string -> string"
 "Def. Calentar: lograr que ...."
 "Ejemplo: ....."
@@ -16,7 +17,7 @@ Calentar <- function(x){
 Preparar <- function(x,y){
   if(x=="naranjas cortadas"){
     return("jugo de naranjas")
-  }else if((x=="masa de panqueques" && y=="sartÃ©n caliente")||(y=="masa de panqueques" && x=="sartÃ©n caliente")){
+  }else if((x=="masa de panqueques" && y=="sartén caliente")||(y=="masa de panqueques" && x=="sartÃ©n caliente")){
     return("panqueques")
   }else if((x=="harina" && y=="huevos")||(y=="harina" && x=="huevos")){
     return("masa de panqueques")
@@ -56,7 +57,7 @@ Cortar <- function(x){
 }
 
 CalentarSarten <- function(){
-  return("sartÃ©n caliente")
+  return("sartén caliente")
 }
 
 Servir <- function(x,y,z,j){
@@ -65,4 +66,20 @@ Servir <- function(x,y,z,j){
   }else{
     return("iiiuuuu... esto no estÃ¡ listo")
   }
+  
+  #desayuno
+  Cortar ("pan")
+  Cortar ("palta")
+  Cortar ("naranjas")
+  Calentar ("cafe")
+  Calentar ("pan cortado")
+  Moler ("palta cortada")
+  Preparar ("naranjas cortadas")
+  Preparar ("harina","huevos")
+  CalentarSarten ()
+  Preparar ("masa de panqueques","sartén caliente")
+  Preparar ("pan tostado","palta molida")
+  Rellenar ("panqueques")
+  Servir ("pan tostado con palta","panqueques con manjar","jugo de naranjas","cafe caliente")
+  
 }
