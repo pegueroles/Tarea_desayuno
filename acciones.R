@@ -1,3 +1,8 @@
+"Receta de Diseño"
+"Calentar: string -> string"
+"Def. Calentar: lograr que ...."
+"Ejemplo: ....."
+
 Calentar <- function(x){
   if(x=="cafe"){
     return("cafe caliente")
